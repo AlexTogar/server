@@ -35,7 +35,5 @@ def hello():
     "humidity": humidity})
 
 
-if __name__ == '__main__':
-    app.run()
 
 
