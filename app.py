@@ -2,6 +2,13 @@ from flask import Flask
 from datetime import datetime
 app = Flask(__name__)
 
+def prepare(param):
+    if param in request.args:
+        return request.args[param]
+    else:
+        return ""
+key = "a4ef86bd-705f-47dc-bcbd-551dab0ff43c"
+
 @app.route("/")
 def hello():
     #prepare parameters
